@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Map<String, Integer> products = new HashMap<>();
+
+        products.put("Laptop", 50000);
+        products.put("Mouse", 500);
+        products.put("Keyboard", 1200);
+
+        System.out.println("Laptop price: " + products.get("Laptop"));
+
+        products.put("Mouse", 600);
+
+        System.out.println("Updated mouse price: " + products.get("Mouse"));
+    }
+}
